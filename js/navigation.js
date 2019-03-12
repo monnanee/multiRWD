@@ -1,3 +1,7 @@
+$(window).resize(function(){
+  location.reload();
+});
+
 var viewport = matchMedia('(max-width:999px)');
 if(viewport.matches){
   var nav = $('.navigation');
