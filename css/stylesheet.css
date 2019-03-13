@@ -23,7 +23,7 @@ a{
   color: inherit;
 }
 /* 콘텐츠 영역 별 배경색 */
-.header{
+/* .header{
   
 }
 .navigation{
@@ -46,7 +46,7 @@ a{
 }
 .twitter{
   background:  green;
-}
+} */
 .slogan{
   background:  orchid;
 }
@@ -65,7 +65,7 @@ body{
   color: #181818;
   background: #fff;
   font-family: "Noto Sans Regular";
-  line-height: 1.5;
+  line-height: 1.15;
   font-size: 1.4rem;
 }
 
@@ -108,6 +108,43 @@ body{
 .twitter-heading .en-heading{
   color: #6aaee6;
 }
+/* 메인콘텐츠 단락 공통 */
+[class$="-summary"]{
+  line-height: 1.5;
+}
+/* 추천서적 공통 */
+.book-cover{
+  width: 70%;
+  margin: 15px auto;
+  text-align: center;
+}
+.book-detail{
+  text-align: center;
+  margin: 15px 0;
+}
+.book-author, .book-author-name{
+  display:inline-block;
+}
+.book-grade{
+  font-size: 2rem;
+  color: #abd375;
+}
+.book-summary{
+  /* line-height: 1.5; */
+}
+
+/* 새소식 공통 */
+.video-container{
+  margin: 15px auto;
+}
+.video-date{
+  display: block;
+  text-align: right;
+  margin-top: 15px;
+}
+/* 게시판 공통 */
+/* 트위터 공통 */
+
 /* 모바일 스타일 */
 @media screen and (max-width: 999px){
   html{
@@ -409,7 +446,6 @@ body{
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
-    height: 40vh; 
   }
   .book, .news, .board, .favorite, .twitter{
     margin-top: 20px;
@@ -420,6 +456,7 @@ body{
     width: 32%;
     /* width: calc((5 * 65 + 4 * 20) / 1000 * 100%); */
   }
+  
   /* 데스크납 새소식 */
   .news{
     /*width: 660px;*/
